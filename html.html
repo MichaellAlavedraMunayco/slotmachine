@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!--
+Description:
+You have 100 coins and have a series of symbols (each one has a value, for example 🍒 = 10, 🍎 = 20, ... etc) that you should choose. Each time you choose a symbol you will be charged 10 coins.
+Once the machine started playing, if the symbol in which the rounds end coincides with one that you have chosen, the value of the symbol multiplied with the number of times you chose that symbol will be added to your coins.
+It may happen that the lap ends in the 🔄 symbol, which has no value, only gives way to a few more laps.
+
+Description:
+Usted tiene 100 monedas y cuenta con una serie de simbolos(cada uno tiene un valor, por ejemplo 🍒=10, 🍎=20,...etc) que debera escoger. Cada vez que usted elija un simbolo se le descontaran 10 monedas.
+Una vez que la maquina comenzo a jugar, si el simbolo en el que terminan las vueltas coincide con alguna que tu hayas escogido, se añadira el valor del simbolo multiplicado con el numero de veces que usted escogio ese simbolo a tus monedas.
+Puede suceder que la vuelta termine en el simbolo 🔄, el cual no tiene valor, solo da paso a unas vueltas mas.
+-->
+    <head>
+      <title>Slot Machine</title>
+      <link rel="stylesheet" type="text/css" href="css.css">
+      <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+        <div class="c">
+            <div>WON💰 <b id="w">00000</b></div>  
+            <div>DINER💸 <b id="d">00100</b></div>
+        </div>
+        <div class="r">
+            <b class="h"></b>
+            <span>🍊</span><span>🔔</span><span>💣</span><span>🔥</span><span>🍎</span><span>🍈</span>
+            <span>🔔</span><span>🍉</span>
+            <span>🔄</span><span>🍒</span>
+            <span>🌟</span><span>🍊</span>
+            <span>🍈</span><span>🍎</span><span>🎰</span><span>🍒</span><span>🍈</span><span>🍉</span>
+        </div>
+        <div class="m">
+          <div>🍒</div><div>🍎</div><div>🍊</div><div>🍈</div><div>🍉</div>
+          <div>🔔</div><div>🎰</div><div>🌟</div><div>🔥</div><div>💣</div>
+          <div>10</div><div>20</div><div>30</div><div>40</div><div>50</div>
+          <div>60</div><div>70</div><div>80</div><div>100</div><div>200</div>
+          <div class="count">×<b class="mul">0</b></div><div class="count">×<b class="mul">0</b></div>
+          <div class="count">×<b class="mul">0</b></div><div class="count">×<b class="mul">0</b></div>
+          <div class="count">×<b class="mul">0</b></div><div class="count">×<b class="mul">0</b></div>
+          <div class="count">×<b class="mul">0</b></div><div class="count">×<b class="mul">0</b></div>
+          <div class="count">×<b class="mul">0</b></div><div class="count">×<b class="mul">0</b></div>
+        </div>
+        <div class="bs">
+          <div class="btns">
+              <div onclick="bet(this)">🍒</div><div onclick="bet(this)">🍎</div>
+              <div onclick="bet(this)">🍊</div><div onclick="bet(this)">🍈</div>
+              <div onclick="bet(this)">🍉</div><div onclick="bet(this)">🔔</div>
+              <div onclick="bet(this)">🎰</div><div onclick="bet(this)">🌟</div>
+              <div onclick="bet(this)">🔥</div><div onclick="bet(this)">💣</div>
+          </div>
+          <div class="p">START<div id="play" onclick="playgame()">🔴</div></div>
+      </div>
+    </body>
+</html>
